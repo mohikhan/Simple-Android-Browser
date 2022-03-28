@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight=".04"
+        >
+
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/editurl"
+            android:hint="Enter URL or search web"
+            android:layout_weight=".9"
+
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/gotobtn"
+            android:text="GO"
+            android:layout_weight=".1"
+            />
+
+        <!--        <Button-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="match_parent"-->
+        <!--            android:id="@+id/bkmrk"-->
+        <!--            android:text="Bk"-->
+        <!--            android:layout_weight=".1"-->
+        <!--            />-->
+        <!--        <Button-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="match_parent"-->
+        <!--            android:id="@+id/Accessb"-->
+        <!--            android:text="accessme"-->
+        <!--            android:layout_weight=".1"-->
+        <!--            />-->
+
+        <!--        <Button-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="match_parent"-->
+        <!--            android:id="@+id/Accesshist"-->
+        <!--            android:text="Hist"-->
+        <!--            android:layout_weight=".1"-->
+        <!--            />-->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight=".01"
+        >
+
+
+        <ProgressBar
+            android:id="@+id/mybar"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight=".95"
+        >
+        <WebView
+            android:id="@+id/myview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <!--    <ListView-->
+        <!--        android:layout_width="match_parent"-->
+        <!--        android:layout_height="match_parent"-->
+        <!--        android:layout_weight=".5"-->
+        <!--        android:id="@+id/bkmarks22"-->
+        <!--        />-->
+    </LinearLayout>
+
+</LinearLayout>
